@@ -1,7 +1,6 @@
 import { Component } from "@angular/core";
 
 import { ListStore, ListItem } from "./list.store";
-import { FluxViewRender } from "../_flux";
 
 @Component({
     selector: 'my-list',
