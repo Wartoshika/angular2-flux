@@ -1,3 +1,7 @@
-<strong>
-    hello from list directive (html served via webpack static require)
-</strong>
+<button (click)="addRandom()"> Add ListEntry Random Number </button>
+
+<ul>
+    <li *ngFor="let item of listStore.getStore();" (click)="listStore.removeByItem(item)">
+        {{ item.text }}
+    </li>
+</ul>
