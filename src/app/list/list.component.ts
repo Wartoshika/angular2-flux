@@ -8,9 +8,7 @@ import { FluxViewRender } from "../_flux";
     template: require('./list.html'),
     providers: [ListStore]
 })
-export class ListComponent /*implements FluxViewRender*/ {
-
-    private store: Array<ListItem>;
+export class ListComponent {
 
     constructor(private listStore: ListStore) {
 
@@ -18,7 +16,7 @@ export class ListComponent /*implements FluxViewRender*/ {
 
     addRandom(): void {
 
-        
+
         this.listStore.addItem({
             text: Math.random().toString()
         });
